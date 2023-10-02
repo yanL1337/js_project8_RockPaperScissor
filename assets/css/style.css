@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hide {
+  display: none;
+}
+
+html {
+  font-family: Helvetica;
+}
+
+body {
+  color: white;
+  background-color: rgb(0, 69, 69);
+}
+body .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .wrapper .smallBox {
+  border: 2px solid rgb(0, 102, 0);
+  text-align: center;
+  width: 300px;
+  padding: 20px 40px;
+  margin-top: 40px;
+}
+body .wrapper .smallBox:nth-of-type(2) {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+}
+body .wrapper .smallBox h2 {
+  margin-bottom: 20px;
+}
+body .wrapper .smallBox label {
+  margin-right: 10px;
+  font-size: 20px;
+}
+body .wrapper .gameWrapper {
+  display: flex;
+  margin-bottom: 20px;
+}
+body .wrapper .gameWrapper .rounds {
+  margin: 0 20px;
+}
+body .wrapper .gameWrapper .rounds:hover {
+  cursor: pointer;
+}
+body .wrapper h1 {
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+body .wrapper h2 {
+  margin-bottom: 20px;
+}
+body .wrapper a {
+  font-size: 40px;
+  color: tomato;
+}
+body .wrapper .round,
+body .wrapper .rounds {
+  border: 2px solid black;
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+  border-radius: 50%;
+}
+body .wrapper .round .selection,
+body .wrapper .round .turnPlayer,
+body .wrapper .round .turnComp,
+body .wrapper .rounds .selection,
+body .wrapper .rounds .turnPlayer,
+body .wrapper .rounds .turnComp {
+  font-size: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */

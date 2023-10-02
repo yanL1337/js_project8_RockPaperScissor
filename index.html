@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schere, Stein, Papier</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="smallBox">
+        <h2>How many rounds</h2>
+        <div class="auswahl">
+          <label for="5"
+            ><input
+              type="radio"
+              name="rounds"
+              class="choose"
+              value="5"
+              id="5"
+            />5</label
+          >
+
+          <label for="10"
+            ><input
+              type="radio"
+              name="rounds"
+              class="choose"
+              value="10"
+              id="10"
+            />10</label
+          >
+
+          <label for="15"
+            ><input
+              type="radio"
+              name="rounds"
+              class="choose"
+              value="15"
+              id="15"
+            />15</label
+          >
+
+          <label for="20"
+            ><input
+              type="radio"
+              name="rounds"
+              class="choose"
+              value="20"
+              id="20"
+            />20</label
+          >
+        </div>
+
+        <div class="counter hide">
+          <p id="roundFrom"></p>
+          <p>---</p>
+          <p id="roundTill"></p>
+        </div>
+      </div>
+
+      <div class="smallBox">
+        <div class="littleWrapper">
+          <h2>You</h2>
+          <div class="round">
+            <div class="turnPlayer">❓</div>
+          </div>
+        </div>
+
+        <p id="countPlayer">0</p>
+        <p>:</p>
+        <p id="countComp">0</p>
+
+        <div class="littleWrapper">
+          <h2>Comp</h2>
+          <div class="round">
+            <div class="turnComp">❓</div>
+          </div>
+        </div>
+      </div>
+
+      <h1 id="commentary">Let's play</h1>
+
+      <div class="gameWrapper">
+        <div class="rounds">
+          <div value="stone" class="selection">✊</div>
+        </div>
+        <div class="rounds">
+          <div value="paper" class="selection">✋</div>
+        </div>
+        <div class="rounds">
+          <div value="scissor" class="selection">✌️</div>
+        </div>
+      </div>
+      <h2>MAKE YOUR MOVE.</h2>
+
+      <a href="index.html">restart</a>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
