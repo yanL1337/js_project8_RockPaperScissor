@@ -23,7 +23,8 @@ body .wrapper {
 body .wrapper .smallBox {
   border: 2px solid rgb(0, 102, 0);
   text-align: center;
-  width: 300px;
+  width: 500px;
+  height: 150px;
   padding: 20px 40px;
   margin-top: 40px;
 }
@@ -63,6 +64,9 @@ body .wrapper a {
   font-size: 40px;
   color: tomato;
 }
+body .wrapper .counter {
+  font-size: 30px;
+}
 body .wrapper .round,
 body .wrapper .rounds {
   border: 2px solid black;
@@ -70,6 +74,20 @@ body .wrapper .rounds {
   height: 50px;
   padding: 20px;
   border-radius: 50%;
+  animation: flowe infinite 2.5s;
+  transition: 0.5s ease-in-out;
+}
+body .wrapper .round:nth-of-type(2),
+body .wrapper .rounds:nth-of-type(2) {
+  animation-delay: 1s;
+}
+body .wrapper .round:nth-of-type(3),
+body .wrapper .rounds:nth-of-type(3) {
+  animation-delay: 1.5s;
+}
+body .wrapper .round:nth-of-type(4),
+body .wrapper .rounds:nth-of-type(4) {
+  animation-delay: 2s;
 }
 body .wrapper .round .selection,
 body .wrapper .round .turnPlayer,
@@ -78,6 +96,15 @@ body .wrapper .rounds .selection,
 body .wrapper .rounds .turnPlayer,
 body .wrapper .rounds .turnComp {
   font-size: 50px;
+}
+
+@keyframes flowe {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
